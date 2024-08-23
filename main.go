@@ -1,6 +1,8 @@
-/*This main.go file sets up a list of servers and services, then uses
+/*
+This main.go file sets up a list of servers and services, then uses
 goroutines to check the status of each service in parallel. The results are
-collected and printed after all checks are complete.*/
+collected and printed after all checks are complete.
+*/
 package main
 
 import (
@@ -35,5 +37,5 @@ func main() {
 		fmt.Println(result)
 	}
 
-	select{}
+	select {}
 }
